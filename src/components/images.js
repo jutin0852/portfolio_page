@@ -10,7 +10,7 @@ export default function Homepics({mysrc,name,coming}){
         <i className="material-icons arr arrow">call_made</i> 
  ) }
          <div className="container" >
-            <img src={mysrc} alt="" />
+            <img src={mysrc} fetchpriority="high" alt="" />
          </div> 
        </div>
     )}

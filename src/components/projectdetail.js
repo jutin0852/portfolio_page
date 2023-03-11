@@ -78,7 +78,7 @@ export default function Projectdetail() {
           />
 
           <div className={project?.mainsrcvid1 ? "container" : "none"}>
-            <video src={project?.mainsrcvid1} autoPlay loop muted alt="ff" />
+            <video src={project?.mainsrcvid1} autoPlay loop playsInline muted alt="ff" />
           </div>
         </div>
 
@@ -98,7 +98,7 @@ export default function Projectdetail() {
           <img className="img" src={project?.img5} alt="" />
           <img className="img" src={project?.img6} alt="" />
           <div className={project?.mainsrcvid1 ? "container" : "none"}>
-            <video src={project?.mainsrcvid1} autoPlay loop muted alt="ff" />
+            <video src={project?.mainsrcvid1} autoPlay loop playsInline muted alt="ff" />
           </div>
         </div>
         <img className="firstimg" src={project?.img7} alt="" />
@@ -113,7 +113,7 @@ export default function Projectdetail() {
           <img className="img" src={project?.img11} alt="" />
           <img className="img" src={project?.img12} alt="" />
           <div className={project?.vid1 ? "container" : "none"}>
-            <video src={project?.vid1} autoPlay loop muted alt="ff" />
+            <video src={project?.vid1} autoPlay loop playsInline muted alt="ff" />
           </div>
         </div>
         <img className="firstimg" src={project?.img17} alt="" />
