@@ -452,7 +452,7 @@ color:rgb(127, 127, 127) ;
 .imgcontain .container video {
   width: 970px;
   height: 770px;
-  /* border-radius: 15px; */
+  /* border-radius: 20px; */
   position: relative;
   top: -60px;
   left: -150px;
