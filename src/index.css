@@ -246,26 +246,26 @@ header nav a.active{
   animation-duration: 0.5s;
 }
 .add{
-  font-size: 4.3em;
-  padding: 120px;
+  font-size: 1.9em;
+  padding:100px 20px;
 }
 .profilepics{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding: 70px 130px;
+    padding: 20px;
 
 }
 .profilepics img{
-  width: 600px;
-  height: 500px;
+  width: 100%;
+  /* height: 100px; */
   border-radius: 15px;
   margin-bottom: 20px;
 }
 
 .profile header{
   width: initial;
-  padding: 150px 150px;
+  padding: 50px;
 }
 .about{
   display: flex;
@@ -280,10 +280,10 @@ header nav a.active{
   transform:translateY(100px)
 }
 .about p{
-   font-size: 2em;
-   width: 600px;
+   font-size: 0.7em;
+   width: 80%;
    margin-top: 50px;
-   margin-bottom: 150px;
+   margin-bottom: 50px;
    transform:translateY(100px)
 }
 .work{
@@ -298,7 +298,7 @@ header nav a.active{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding: 0px 200px 150px 200px;
+  padding: 20px;
   transform:translateY(100px)
 
 
@@ -306,7 +306,7 @@ header nav a.active{
 }
 .place{
   font-weight: bold;
-  font-size: 1.1em;
+  font-size: 0.7em;
 
 }
 .work span{
@@ -1108,6 +1108,11 @@ header nav a.active{
   display: flex;
   justify-content: space-between;
   padding: 20px 30px;
+  text-align: unset;
+  flex-direction: row;
+ }
+ footer div{
+  font-size: 1em;
  }
   footer ul li{
   display: inline-block;
