@@ -10,5 +10,6 @@ export default function Homevids({mysrc,name}){
          <div className="container" >
             <video src={mysrc} autoPlay loop playsInline muted  alt="ff" />
         </div> 
+        <p className="mobilepicName" >{name}</p>
        </div>
     )}

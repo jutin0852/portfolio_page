@@ -11,6 +11,8 @@ export default function Homepics({mysrc,name,coming}){
  ) }
          <div className="container" >
             <img src={mysrc} fetchpriority="high" alt="" />
-         </div> 
+         </div>
+         <p className="mobilepicName" >{name}</p> 
        </div>
+
     )}

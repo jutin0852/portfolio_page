@@ -1,9 +1,10 @@
-import React, { useRef } from "react";
+import React, {. useRef } from "react";
 import { useIntersectionObserver } from "./intercept";
 
 import { useParams } from "react-router-dom";
 import Footer from "../footer";
 import projects from "./db.json";
+import { useGoUp } from "./go-up";
 
 export default function Projectdetail() {
   const { id } = useParams();
@@ -13,6 +14,19 @@ export default function Projectdetail() {
 
   const inview = useIntersectionObserver(myref);
   const inviews = useIntersectionObserver(newref);
+  const scrollup =  useGoUp()
+
+  //  useEffect(() => {
+  //   const handleLoad = () => {
+  //     if(window.scrollY > 50){
+  //       window.scrollTo({top:0})
+  //     }
+  //   }
+  //   window.addEventListener('load', handleLoad);
+  //   return () => window.removeEventListener('load', handleLoad);
+
+    
+  // },[])
 
   return (
     <div className="project">
@@ -78,7 +92,14 @@ export default function Projectdetail() {
           />
 
           <div className={project?.mainsrcvid1 ? "container" : "none"}>
-            <video src={project?.mainsrcvid1} autoPlay loop playsInline muted alt="ff" />
+            <video
+              src={project?.mainsrcvid1}
+              autoPlay
+              loop
+              playsInline
+              muted
+              alt="ff"
+            />
           </div>
         </div>
 
@@ -93,12 +114,26 @@ export default function Projectdetail() {
 
         <div className="imgcontain">
           <div className={project?.img18 ? "ringvid" : "none"}>
-            <video src={project?.img18} autoPlay loop muted className=" ring" />
+            <video
+              src={project?.img18}
+              autoPlay
+              loop
+              playsInline
+              muted
+              className=" ring"
+            />
           </div>
           <img className="img" src={project?.img5} alt="" />
           <img className="img" src={project?.img6} alt="" />
           <div className={project?.mainsrcvid1 ? "container" : "none"}>
-            <video src={project?.mainsrcvid1} autoPlay loop playsInline muted alt="ff" />
+            <video
+              src={project?.mainsrcvid1}
+              autoPlay
+              loop
+              playsInline
+              muted
+              alt="ff"
+            />
           </div>
         </div>
         <img className="firstimg" src={project?.img7} alt="" />
@@ -113,7 +148,14 @@ export default function Projectdetail() {
           <img className="img" src={project?.img11} alt="" />
           <img className="img" src={project?.img12} alt="" />
           <div className={project?.vid1 ? "container" : "none"}>
-            <video src={project?.vid1} autoPlay loop playsInline muted alt="ff" />
+            <video
+              src={project?.vid1}
+              autoPlay
+              loop
+              playsInline
+              muted
+              alt="ff"
+            />
           </div>
         </div>
         <img className="firstimg" src={project?.img17} alt="" />
@@ -122,12 +164,13 @@ export default function Projectdetail() {
             src={project?.lastvid}
             autoPlay
             loop
+            playsInline
             muted
             className="firstimg"
           />
         </div>
       </div>
-      <Footer inviews={inviews} ref={newref} />
+      <Footer inviews={inviews} ref={newref} scrollup={scrollup} />
     </div>
   );
 }

@@ -5,6 +5,7 @@ import Homepics from "./images";
 import { useIntersectionObserver } from "./intercept";
 import { Link } from "react-router-dom";
 import homepics from "./db.json";
+import { useGoUp } from "./go-up.js";
 
 export default function Home() {
   const myref = useRef(null);
@@ -13,8 +14,16 @@ export default function Home() {
   const inview = useIntersectionObserver(myref);
   const inviews = useIntersectionObserver(newref);
 
-  //loader function
-  //    const homepics = useLoaderData()
+  const scrollup = useGoUp()
+  // useEffect(() => {
+  //   const handleLoad = () => {
+  //     alert('welcome')
+  //   }
+  //   window.addEventListener('pageshow', handleLoad);
+  //   return () => window.removeEventListener('pageshow', handleLoad);
+
+    
+  // })
 
   return (
     <div className="home">
@@ -63,7 +72,7 @@ export default function Home() {
           ))}
         </div>
       </div>
-      <Footer inviews={inviews} ref={newref} />
+      <Footer inviews={inviews} ref={newref} scrollup={scrollup} />
     </div>
   );
 }

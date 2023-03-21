@@ -53,8 +53,11 @@ header nav a.active{
   width: 70% ;
   text-align: center;
   margin: 50px 0px 50px 0px;
+  opacity: 0;
+  transform: translateY(100px);
 }
 .Expertise{
+  opacity: 0;
 
   align-items: center;
   display: none;
@@ -80,23 +83,25 @@ header nav a.active{
  display: flex;
  justify-content: space-around;
  flex-wrap: wrap;
- padding: 50px 20px 100px 20px;
+ padding: 50px 10px 100px 10px;
  position: relative;
  transform: translateY(100px);
+ opacity: 0;
 }
 .homepics img {
-  width: 320px;
+  width: 370px;
   height: 250px;
-  border-radius: 15px;
+  /* border-radius: 15px; */
   transition-duration: 0.5s;
   position: relative;
   top: -5px;
   left: -5px;
 }
 .homepics video {
-  width: 500px;
+  width: 530px;
   height: 300px;
-  transition-duration: 0.5s;
+
+  transition-duration:none;
   position: relative;
   top: -30px;
   left: -90px;
@@ -114,9 +119,9 @@ header nav a.active{
 }
 .container{
   overflow: hidden;
-  transition-duration: 0.5s;
-  border-radius: 15px;
-  width: 300px;
+  transition-duration: none;
+  border-radius: 20px;
+  width: 350px;
   height: 230px;
 }
 .container:hover{
@@ -226,11 +231,11 @@ header nav a.active{
  }
  
  .fadeup{
-  opacity: 0;
- animation: moveup 0.9s ease-out forwards ;
+
+ animation: moveup 2s ease forwards ;
 }
 @keyframes moveup{
-  from{ transform:translateY(100px)}
+  from{ transform:translateY(100px) ; opacity: 0;}
   to{ transform: translateY(0px); opacity: 1;}
 }
 .delay{
@@ -442,7 +447,7 @@ color:rgb(127, 127, 127) ;
   overflow: hidden;
   border-radius: 20px;
   margin: 10px 0;
-  max-width:49% ;
+  max-width:100% ;
 }
 .none{
   display: none;
@@ -479,6 +484,9 @@ a{
 }
 .lock{
   color: white;
+}
+.mobilepicName{
+  display: block;
 }
 }
 @media screen and (min-width:750px) {
@@ -938,6 +946,9 @@ a{
 }
 .lock{
   color: white;
+}
+.mobilepicName{
+  display: none;
 }
 }
 @media screen and (min-width:1000px) {
@@ -1403,5 +1414,14 @@ a{
 .lock{
   color: white;
 }
-  
+.mobilepicName{
+  display: none;
+}
+.scrollup{
+  position: fixed;
+  bottom: 100px;
+  z-index: 100;
+  right: 30px;
+  cursor: pointer;
+}
 }
