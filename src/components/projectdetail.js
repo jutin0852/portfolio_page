@@ -1,4 +1,4 @@
-import React, {. useRef } from "react";
+import React, { useRef } from "react";
 import { useIntersectionObserver } from "./intercept";
 
 import { useParams } from "react-router-dom";
