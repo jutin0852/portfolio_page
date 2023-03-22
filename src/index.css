@@ -488,6 +488,11 @@ a{
 .mobilepicName{
   display: block;
 }
+.scrollup{
+  position: fixed;
+  right: 30px;
+  bottom:50px;
+}
 }
 @media screen and (min-width:750px) {
   
