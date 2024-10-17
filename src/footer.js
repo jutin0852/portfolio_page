@@ -3,9 +3,9 @@ import { forwardRef } from "react";
 const Footer = forwardRef(({ inviews, contact, scrollup }, ref) => {
   const handleScrollClick = () => {
     window.scrollTo({
-        top: 0,
-        behavior:'smooth'
-    })
+      top: 0,
+      behavior: "smooth",
+    });
   };
   return (
     <div>
@@ -14,7 +14,7 @@ const Footer = forwardRef(({ inviews, contact, scrollup }, ref) => {
         <br />
         <p className={inviews ? " fadeup delay1" : null}>
           {" "}
-          <a href="mailto:jutindikonu@icloud.com">Get in touch</a>
+          <a href="https://www.linkedin.com/in/jutin-dikonu/">Get in touch</a>
         </p>
       </div>
       {scrollup && (
@@ -26,16 +26,15 @@ const Footer = forwardRef(({ inviews, contact, scrollup }, ref) => {
         />
       )}
       <footer>
-        <div>© Jutin 2023</div>
+        <div>© Jutin 2024</div>
 
         <ul>
           <li>
             <a href="https:/www.twitter.com/jutin001">Twitter</a>
           </li>
-          <li>LinkedIn</li>
+
           <li>
-            {" "}
-            <a href="mailto:jutindikonu@icloud.com">Mail</a>
+            <a href="https://www.linkedin.com/in/jutin-dikonu/">LinkedIn</a>
           </li>
         </ul>
       </footer>

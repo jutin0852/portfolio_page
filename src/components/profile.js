@@ -41,9 +41,7 @@ export default function Profile() {
             about
           </span>
           <p ref={pref} className={prefinview ? "fadeup" : undefined}>
-            A freelance designer based in the Nigeria. I combine my experience
-            in product and brand to solve problems, tell stories, and create
-            compelling experiences.
+            A frontend developer based in the Nigeria.
           </p>
         </div>
 
@@ -66,28 +64,10 @@ export default function Profile() {
           className={placeinview ? "workparent fadeup delay1" : "workparent"}
         >
           <Work
-            year={"2017 - present"}
-            place={"OH.STUDIO"}
-            work={"Freelance Designer"}
-            title={"Freelance"}
-          />
-          <Work
-            year={"2021 - present"}
-            place={"Friendly Studios"}
-            work={"Lead product Design"}
-            title={"Freelance"}
-          />
-          <Work
-            year={"2022"}
-            place={"R/GA"}
-            work={"Senior Visual Developer"}
-            title={"Freelance"}
-          />
-          <Work
-            year={"2021"}
-            place={"R/GA"}
-            work={"Senior Visual Developer"}
-            title={"Freelance"}
+            year={"Oct 2023 - jun 2024"}
+            place={"i-Tapp"}
+            work={"Frontend web Developer"}
+            title={"Frontend Developer"}
           />
         </div>
       </div>
